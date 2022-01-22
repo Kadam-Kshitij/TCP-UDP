@@ -24,6 +24,9 @@ Transmission control protocol
 6) Possible to retransmit last packets.
 7) FTP, HTTP, SMTP, HTTPS, Telnet
 
+Connection is done via 3 way handshake
+SYN, SYN-ACK, ACK
+
 === UDP ===
 User Datagram protocol
 1) Unreliable
@@ -56,3 +59,36 @@ UDP ( 8 bytes )
 <-- 16 bits --> <-- 16 bits -->
 Source port     Destination port
 Length          Checksum      
+
+
+=== DHCP ===
+Uses UDP
+Device send broadcast on network.
+The router gets it and replies available ip address
+THe device takes the ip and sends back a signal
+DHCPDiscover - Look for DHCP server
+DHCPOffer - Server offers an address
+DHCPRequest - Request to take the address
+DHCPACK - Server sends ip to the device
+
+=== FTP ===
+Used to transfer files.
+Not secure. No encrytption of data.
+FTPS ( FTP SSL )should be used.
+TFTP - Trivial FTP - Uses UDP - Not secure - Dont use over intenet - Use in local transfer
+
+
+
+=== Port numbers ===
+20 - FTP ( Data )
+21 - FTP ( Command )
+22 - SSH
+23 - Telnet
+25 - SMTP
+53 - DNS
+67,68 - DHCP
+69 - TFTP
+80 - HTTP
+123 - NTP
+443 - HTTPS
+3389 - RDP
