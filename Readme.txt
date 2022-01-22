@@ -118,3 +118,9 @@ Home network is assigned only one public IP. And all devices in the house are as
 We cannot access internet using private IP. Only possible using public IP.
 Router converts private IP to public and vice versa.
 Private IP can be reused by networks internally. This saves number of public IP.
+
+=== HTTP, HTTPS, SSL, TLS, DNS ===
+HTTP - Is not secured since data transfered on internet can be taken by hackers
+HTTPS - Secure since data is encrypted before sending over internet
+Uses SSL or TLS protocol for security.
+DNS - Used to translate domain name to IP.
